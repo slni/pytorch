@@ -136,7 +136,7 @@ def ones_(tensor):
         >>> nn.init.ones_(w)
     """
     # type: (Tensor) -> Tensor
-    # return _no_grad_fill_(tensor, 1.)
+    return _no_grad_fill_(tensor, 1.)
 
 
 @weak_script
